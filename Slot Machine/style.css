@@ -1,0 +1,17 @@
+.machine {
+  border: 1px solid red;
+  width: 50%;
+  margin-left: 25%;
+}
+
+.win {
+  color: green;
+}
+
+.lose {
+  color: blue;
+}
+
+p {
+  text-align: center;
+}
