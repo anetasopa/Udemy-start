@@ -1,7 +1,7 @@
 class App extends React.Component {
 	render() {
 		return (
-			<div>
+			<div style={{ backgroundColor: "#FFF8DC" }}>
         <h1 style={{ textAlign: "center" }}>Slot Machine!</h1>
 				<Machine 
           s1="🐵"
