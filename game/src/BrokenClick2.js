@@ -1,22 +1,18 @@
 import React, { Component } from 'react';
-import './BrokenClick.css';
 
-class BrokenClick extends Component {
+class BrokenClick2 extends Component {
 
-  constructor(props) {
-    super(props);
-    this.state = { clicked: false };
-    this.handleClick =  this.handleClick.bind(this);
-  }
+    state = { clicked: false };
+    // this.handleClick =  this.handleClick.bind(this);
 
-  handleClick = (e) => {
+  handleClick = e => {
     this.setState({ clicked: true });
   }
 
   render() {
     return(
       <div>
-        <h1>Broken button</h1>
+        <h1>Broken click 2</h1>
         <p className={this.state.clicked ? 'click' : 'notClick'}>
           { this.state.clicked ? 'Cliked' : 'Not cliked' }
         </p>
@@ -28,4 +24,4 @@ class BrokenClick extends Component {
   }
 }
 
-export default BrokenClick;
+export default BrokenClick2;

@@ -5,8 +5,8 @@ import Rando from './Rando';
 import Demo from './Demo';
 import Button from './Button';
 import BrokenClick from './BrokenClick';
-
-
+import Test from './Test.js';
+import BrokenClick2 from './BrokenClick2';
 
 function App() {
   return (
@@ -16,6 +16,8 @@ function App() {
       <Demo animal= 'cat' food= 'apple' /> 
       <Button />
       <BrokenClick />
+      <Test />
+      <BrokenClick2 />
     </div>
   );
 }
