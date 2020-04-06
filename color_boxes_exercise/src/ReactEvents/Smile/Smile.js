@@ -3,9 +3,15 @@ import './Smile.css';
 
 class Smile extends Component {
 
+  constructor(props) {
+    super(props);
+    this.dispenseWisdom = this.dispenseWisdom.bind(this);
+  }
+
   dispenseWisdom() {
+    console.log('this is...', this);
     let message = [
-      'I hover over the mouse with a smiley face',
+      'This is Smile',
     ];
 
     let rIndex = Math.floor(Math.random() * message.length);
@@ -14,7 +20,12 @@ class Smile extends Component {
 
   render() {
     return(
-      <div className='smile' onMouseEnter={this.dispenseWisdom} style={{fontSize: 50}}> 😀</div>
+      <div 
+        className='smile' 
+        onMouseEnter={this.dispenseWisdom} 
+        style={{fontSize: 50}}> 
+        😀
+      </div>
     );
   }
 }
