@@ -7,7 +7,9 @@ class BetterNumberItem extends Component {
     this.handlerRemove = this.handlerRemove.bind(this);
   }
 
+  // handlerRemove - parent event
   handlerRemove(e) {
+    // remove - child event
     this.props.remove(this.props.value)
   }
 
